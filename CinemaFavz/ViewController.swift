@@ -12,8 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        let background = CAGradientLayer().turquoiseColor()
+        background.frame = self.view.bounds
+        self.view.layer.insertSublayer(background, atIndex: 0)
+            }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

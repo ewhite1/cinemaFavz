@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,9 +17,82 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MzC-CZ-LBv">
+                                <rect key="frame" x="20" y="72" width="560" height="520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="WBa-qv-DNk">
+                                        <rect key="frame" x="0.0" y="92" width="560" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WBa-qv-DNk" id="c3o-OR-JvJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="109"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Hero Six" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXF-Nd-Q9c">
+                                                    <rect key="frame" x="116" y="9" width="436" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="B8M-hU-gCW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is some description text of the movie. It is limited to 5 lines." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8Y-2y-aob">
+                                                    <rect key="frame" x="120" y="37" width="432" height="38"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38" id="30g-fD-Dp1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.imdb.com/title/tt2245084/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlF-nQ-C3s">
+                                                    <rect key="frame" x="108" y="78" width="444" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="QBC-yN-ayF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bighero-placement" translatesAutoresizingMaskIntoConstraints="NO" id="iPU-9B-E29">
+                                                    <rect key="frame" x="8" y="21" width="100" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="8zc-SZ-hdW"/>
+                                                        <constraint firstAttribute="height" constant="80" id="t0N-Yv-5SK"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="o8Y-2y-aob" firstAttribute="trailing" secondItem="c3o-OR-JvJ" secondAttribute="trailingMargin" id="0WY-SF-JKj"/>
+                                                <constraint firstItem="o8Y-2y-aob" firstAttribute="top" secondItem="ZXF-Nd-Q9c" secondAttribute="bottom" constant="3" id="4kI-4U-dxO"/>
+                                                <constraint firstItem="ZXF-Nd-Q9c" firstAttribute="leading" secondItem="iPU-9B-E29" secondAttribute="trailing" constant="8" id="5kH-IP-yFV"/>
+                                                <constraint firstItem="iPU-9B-E29" firstAttribute="bottom" secondItem="c3o-OR-JvJ" secondAttribute="bottomMargin" id="O5m-5s-a2i"/>
+                                                <constraint firstItem="ZXF-Nd-Q9c" firstAttribute="top" secondItem="c3o-OR-JvJ" secondAttribute="topMargin" constant="1" id="Oeq-Ko-QEH"/>
+                                                <constraint firstItem="PlF-nQ-C3s" firstAttribute="top" secondItem="o8Y-2y-aob" secondAttribute="bottom" constant="3" id="Sud-gr-UbU"/>
+                                                <constraint firstItem="ZXF-Nd-Q9c" firstAttribute="trailing" secondItem="c3o-OR-JvJ" secondAttribute="trailingMargin" id="b4z-9e-jOZ"/>
+                                                <constraint firstItem="PlF-nQ-C3s" firstAttribute="leading" secondItem="c3o-OR-JvJ" secondAttribute="leadingMargin" constant="100" id="hcM-wd-0RO"/>
+                                                <constraint firstItem="iPU-9B-E29" firstAttribute="leading" secondItem="c3o-OR-JvJ" secondAttribute="leadingMargin" id="i9y-7j-Xmn"/>
+                                                <constraint firstItem="o8Y-2y-aob" firstAttribute="leading" secondItem="iPU-9B-E29" secondAttribute="trailing" constant="12" id="oV7-l8-eot"/>
+                                                <constraint firstItem="PlF-nQ-C3s" firstAttribute="trailing" secondItem="c3o-OR-JvJ" secondAttribute="trailingMargin" id="tjW-X8-2Lb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MzC-CZ-LBv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="B8f-CA-UJH"/>
+                            <constraint firstItem="MzC-CZ-LBv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="O0I-4g-92f"/>
+                            <constraint firstItem="MzC-CZ-LBv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cF8-sb-kuV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MzC-CZ-LBv" secondAttribute="bottom" constant="8" id="fPE-UP-SL7"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uAU-QQ-OAh"/>
+                    <navigationItem key="navigationItem" id="uAU-QQ-OAh">
+                        <barButtonItem key="rightBarButtonItem" title="+NEW" id="ucX-wK-4Fo"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,4 +117,7 @@
             <point key="canvasLocation" x="289" y="1089"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bighero-placement" width="1400" height="2100"/>
+    </resources>
 </document>

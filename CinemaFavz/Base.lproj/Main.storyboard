@@ -78,6 +78,9 @@
                                                 <constraint firstItem="PlF-nQ-C3s" firstAttribute="trailing" secondItem="c3o-OR-JvJ" secondAttribute="trailingMargin" id="tjW-X8-2Lb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hxN-Rj-E3O" kind="showDetail" id="YZ3-xw-Dnv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -91,21 +94,131 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uAU-QQ-OAh">
-                        <barButtonItem key="rightBarButtonItem" title="+NEW" id="ucX-wK-4Fo"/>
+                        <barButtonItem key="rightBarButtonItem" title="+NEW" id="ucX-wK-4Fo">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="AfD-aR-SpE" kind="show" id="Qmg-fO-uIv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="429"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="vAp-oa-IAI">
+            <objects>
+                <viewController id="hxN-Rj-E3O" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vgd-nw-Ssd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ttq-rd-DjZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GSz-aX-AZI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b14-32-KIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1885" y="429"/>
+        </scene>
+        <!--New Movie-->
+        <scene sceneID="L7N-5p-jiB">
+            <objects>
+                <viewController id="AfD-aR-SpE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hHd-Kz-Cow"/>
+                        <viewControllerLayoutGuide type="bottom" id="jmF-zA-Ucn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l8N-eT-huM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BK4-nX-FQm">
+                                <rect key="frame" x="198" y="83" width="205" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="205" id="Lws-T4-mCZ"/>
+                                    <constraint firstAttribute="height" constant="200" id="Vaf-9k-OKT"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Your Movie Description." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Avv-wP-ZcD">
+                                <rect key="frame" x="20" y="405" width="560" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Movie Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VDh-5v-jDe">
+                                <rect key="frame" x="20" y="291" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="imdb.com page " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HwF-0y-ljc">
+                                <rect key="frame" x="20" y="329" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IMDB Plot Description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VaO-ea-ggq">
+                                <rect key="frame" x="20" y="367" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="042-7F-3tV">
+                                <rect key="frame" x="251" y="550" width="99" height="30"/>
+                                <color key="backgroundColor" red="0.3294117647" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="Xaa-Qd-tre"/>
+                                    <constraint firstAttribute="height" constant="30" id="zCk-qp-PTd"/>
+                                </constraints>
+                                <state key="normal" title="Add Movie">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Sz-O7-WcZ">
+                                <rect key="frame" x="240" y="168" width="121" height="30"/>
+                                <state key="normal" title="Add Movie Poster">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.46274509800000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Avv-wP-ZcD" firstAttribute="top" secondItem="VaO-ea-ggq" secondAttribute="bottom" constant="8" id="1A5-fC-0yv"/>
+                            <constraint firstItem="042-7F-3tV" firstAttribute="top" secondItem="Avv-wP-ZcD" secondAttribute="bottom" constant="17" id="6Oh-f0-pGC"/>
+                            <constraint firstItem="1Sz-O7-WcZ" firstAttribute="centerX" secondItem="BK4-nX-FQm" secondAttribute="centerX" id="90k-hg-MzN"/>
+                            <constraint firstItem="BK4-nX-FQm" firstAttribute="top" secondItem="hHd-Kz-Cow" secondAttribute="bottom" constant="19" id="9TM-Uo-B8v"/>
+                            <constraint firstItem="VDh-5v-jDe" firstAttribute="leading" secondItem="l8N-eT-huM" secondAttribute="leadingMargin" id="GWX-2K-LU7"/>
+                            <constraint firstItem="042-7F-3tV" firstAttribute="centerX" secondItem="l8N-eT-huM" secondAttribute="centerX" id="I5X-Lu-yil"/>
+                            <constraint firstItem="1Sz-O7-WcZ" firstAttribute="centerY" secondItem="BK4-nX-FQm" secondAttribute="centerY" id="PDF-ts-fTn"/>
+                            <constraint firstItem="HwF-0y-ljc" firstAttribute="top" secondItem="VDh-5v-jDe" secondAttribute="bottom" constant="8" id="S4w-gD-vAP"/>
+                            <constraint firstItem="HwF-0y-ljc" firstAttribute="trailing" secondItem="l8N-eT-huM" secondAttribute="trailingMargin" id="Sae-dD-9uk"/>
+                            <constraint firstItem="VaO-ea-ggq" firstAttribute="leading" secondItem="l8N-eT-huM" secondAttribute="leadingMargin" id="cJP-Gg-vMW"/>
+                            <constraint firstItem="VDh-5v-jDe" firstAttribute="top" secondItem="BK4-nX-FQm" secondAttribute="bottom" constant="8" id="dGI-md-ABy"/>
+                            <constraint firstItem="VaO-ea-ggq" firstAttribute="top" secondItem="HwF-0y-ljc" secondAttribute="bottom" constant="8" id="eCO-UV-9LE"/>
+                            <constraint firstItem="BK4-nX-FQm" firstAttribute="centerX" secondItem="l8N-eT-huM" secondAttribute="centerX" id="iw0-Pi-ngM"/>
+                            <constraint firstItem="Avv-wP-ZcD" firstAttribute="trailing" secondItem="l8N-eT-huM" secondAttribute="trailingMargin" id="izH-2Y-CYD"/>
+                            <constraint firstItem="VaO-ea-ggq" firstAttribute="trailing" secondItem="l8N-eT-huM" secondAttribute="trailingMargin" id="kBv-mX-77j"/>
+                            <constraint firstItem="HwF-0y-ljc" firstAttribute="leading" secondItem="l8N-eT-huM" secondAttribute="leadingMargin" id="sG9-Qo-nNC"/>
+                            <constraint firstItem="VDh-5v-jDe" firstAttribute="trailing" secondItem="l8N-eT-huM" secondAttribute="trailingMargin" id="uY1-7r-Ec2"/>
+                            <constraint firstItem="Avv-wP-ZcD" firstAttribute="leading" secondItem="l8N-eT-huM" secondAttribute="leadingMargin" id="ymr-TX-XyZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Movie" id="6N7-oh-njd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sTf-7G-WN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1895" y="-281"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="tSQ-Y6-GH8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8hp-rj-kq8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HxK-Fx-vZf">
+                    <navigationBar key="navigationBar" alpha="0.84999999999999998" contentMode="scaleToFill" id="HxK-Fx-vZf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.058823529409999999" green="0.70519476242953028" blue="0.60569924906510075" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

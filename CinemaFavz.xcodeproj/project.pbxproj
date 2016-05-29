@@ -14,6 +14,7 @@
 		2B0CE8B81CB513A00091EFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0CE8B71CB513A00091EFB5 /* Assets.xcassets */; };
 		2B0CE8BB1CB513A00091EFB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0CE8B91CB513A00091EFB5 /* LaunchScreen.storyboard */; };
 		2B0CE8C81CBB94940091EFB5 /* CAGradientLayer+Convience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0CE8C71CBB94940091EFB5 /* CAGradientLayer+Convience.swift */; };
+		2BEDBECC1CFB9597003561A6 /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDBECB1CFB9597003561A6 /* AddMovieVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2B0CE8BA1CB513A00091EFB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0CE8BC1CB513A00091EFB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B0CE8C71CBB94940091EFB5 /* CAGradientLayer+Convience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Convience.swift"; sourceTree = "<group>"; };
+		2BEDBECB1CFB9597003561A6 /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				2B0CE8B11CB513A00091EFB5 /* Main.storyboard */,
+				2BEDBECB1CFB9597003561A6 /* AddMovieVC.swift */,
 				2B0CE8B91CB513A00091EFB5 /* LaunchScreen.storyboard */,
 			);
 			name = view;
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B0CE8B01CB513A00091EFB5 /* ViewController.swift in Sources */,
+				2BEDBECC1CFB9597003561A6 /* AddMovieVC.swift in Sources */,
 				2B0CE8B61CB513A00091EFB5 /* CinemaFavz.xcdatamodeld in Sources */,
 				2B0CE8C81CBB94940091EFB5 /* CAGradientLayer+Convience.swift in Sources */,
 				2B0CE8AE1CB513A00091EFB5 /* AppDelegate.swift in Sources */,
@@ -320,6 +324,7 @@
 				2B0CE8C11CB513A00091EFB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

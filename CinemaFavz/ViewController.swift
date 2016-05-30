@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let fetchRequest = NSFetchRequest(entityName: "Movie")
         
         do {
-            let results = try context.executeRequest(fetchRequest)
+            let results = try context.executeFetchRequest(fetchRequest)
             self.movies = results as! [Movie]
         } catch let err as NSError {
             print(err.debugDescription)
@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        <#code#>
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

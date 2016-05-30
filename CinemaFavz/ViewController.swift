@@ -58,6 +58,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
+    // create the segue to show the movie cell. This is crap currently!
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == /* ???? */,
+        let destination = segue.destinationViewController as? MovieVC, movieIndex = tableView.indexPathForSelectedRow?.row {
+            destination.movieTitle = movies[movieIndex]
+        }
+        
+    }
 }
 
 

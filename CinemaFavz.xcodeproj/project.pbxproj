@@ -18,6 +18,7 @@
 		2BEDBECE1CFBD81F003561A6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDBECD1CFBD81F003561A6 /* Movie.swift */; };
 		2BEDBED11CFBD974003561A6 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDBECF1CFBD974003561A6 /* Movie+CoreDataProperties.swift */; };
 		2BEDBED41CFBE639003561A6 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDBED31CFBE639003561A6 /* MovieCell.swift */; };
+		2BEDBED61CFC0037003561A6 /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDBED51CFC0037003561A6 /* MovieVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		2BEDBECD1CFBD81F003561A6 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2BEDBECF1CFBD974003561A6 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2BEDBED31CFBE639003561A6 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		2BEDBED51CFC0037003561A6 /* MovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				2B0CE8B11CB513A00091EFB5 /* Main.storyboard */,
+				2BEDBED51CFC0037003561A6 /* MovieVC.swift */,
 				2B0CE8C71CBB94940091EFB5 /* CAGradientLayer+Convience.swift */,
 				2B0CE8B91CB513A00091EFB5 /* LaunchScreen.storyboard */,
 				2BEDBED31CFBE639003561A6 /* MovieCell.swift */,
@@ -183,6 +186,7 @@
 				2BEDBECE1CFBD81F003561A6 /* Movie.swift in Sources */,
 				2B0CE8B61CB513A00091EFB5 /* CinemaFavz.xcdatamodeld in Sources */,
 				2B0CE8C81CBB94940091EFB5 /* CAGradientLayer+Convience.swift in Sources */,
+				2BEDBED61CFC0037003561A6 /* MovieVC.swift in Sources */,
 				2BEDBED11CFBD974003561A6 /* Movie+CoreDataProperties.swift in Sources */,
 				2B0CE8AE1CB513A00091EFB5 /* AppDelegate.swift in Sources */,
 			);

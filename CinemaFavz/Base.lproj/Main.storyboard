@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="1117" y="429"/>
         </scene>
-        <!--View Controller-->
+        <!--MovieVC-->
         <scene sceneID="vAp-oa-IAI">
             <objects>
-                <viewController id="hxN-Rj-E3O" sceneMemberID="viewController">
+                <viewController id="hxN-Rj-E3O" customClass="MovieVC" customModule="CinemaFavz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vgd-nw-Ssd"/>
                         <viewControllerLayoutGuide type="bottom" id="Ttq-rd-DjZ"/>
@@ -233,6 +233,12 @@
                             <constraint firstItem="qj8-kc-6x5" firstAttribute="leading" secondItem="GSz-aX-AZI" secondAttribute="leading" id="jyd-Td-iCl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="movieDesc" destination="87J-dP-kVu" id="BJK-GF-EbN"/>
+                        <outlet property="moviePlot" destination="c3n-N9-7gE" id="nop-zL-zQ2"/>
+                        <outlet property="moviePoster" destination="7Ic-IC-xlJ" id="dPQ-Zq-4rf"/>
+                        <outlet property="movieTitle" destination="zpY-Aq-kQV" id="qiP-1g-gAx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b14-32-KIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

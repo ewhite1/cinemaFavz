@@ -23,7 +23,7 @@
                                 <rect key="frame" x="20" y="72" width="560" height="520"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="WBa-qv-DNk">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="WBa-qv-DNk" customClass="MovieCell" customModule="CinemaFavz" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="560" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WBa-qv-DNk" id="c3o-OR-JvJ">
@@ -80,6 +80,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="movieDesc" destination="o8Y-2y-aob" id="aYH-kK-BEI"/>
+                                            <outlet property="moviePoster" destination="iPU-9B-E29" id="S7t-Tm-1UB"/>
+                                            <outlet property="movieTitle" destination="ZXF-Nd-Q9c" id="QWE-9F-N3L"/>
+                                            <outlet property="movieURL" destination="PlF-nQ-C3s" id="Fat-FE-bDE"/>
                                             <segue destination="hxN-Rj-E3O" kind="showDetail" id="YZ3-xw-Dnv"/>
                                         </connections>
                                     </tableViewCell>

@@ -322,6 +322,7 @@
                     <connections>
                         <outlet property="movieDesc" destination="Avv-wP-ZcD" id="Ngd-sP-Y0i"/>
                         <outlet property="moviePlot" destination="VaO-ea-ggq" id="guc-Y7-UeC"/>
+                        <outlet property="moviePoster" destination="BK4-nX-FQm" id="vzW-Zc-xU6"/>
                         <outlet property="movieTitle" destination="VDh-5v-jDe" id="oAO-Ck-oc5"/>
                         <outlet property="movieURL" destination="HwF-0y-ljc" id="iGT-W3-al4"/>
                     </connections>

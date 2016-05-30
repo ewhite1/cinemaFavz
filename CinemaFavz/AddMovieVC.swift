@@ -15,7 +15,7 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     @IBOutlet weak var movieURL: UITextField!
     @IBOutlet weak var moviePlot: UITextField!
     @IBOutlet weak var movieDesc: UITextView!
-    
+    @IBOutlet weak var moviePoster: UIImageView!
     
     var imagePicker: UIImagePickerController!
     
@@ -35,6 +35,22 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     @IBAction func addMovie(sender: AnyObject) {
         
         // Add stuff to the database, when pressed and dissmiss the view controller
+        
+        if let title = movieTitle.text where title != "" {
+         
+            let app = UIApplication.sharedApplication().delegate as! AppDelegate
+            let context = app.managedObjectContext
+            let entity = NSEntityDescription.entityForName("Movie", inManagedObjectContext: context)!
+            let movie = Movie(entity: entity, insertIntoManagedObjectContext: context)
+            movie.title = title
+            movie.link = movieURL.text
+            movie.movieDesc = movieDesc.text
+            movie.plot = moviePlot.text
+            movie.setMovieImage(moviePoster.image!)
+            
+            
+        }
+        
     }
   
 

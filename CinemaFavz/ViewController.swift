@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var movies = [Movie]()
+        
         let background = CAGradientLayer().turquoiseColor()
         background.frame = self.view.bounds
         self.view.layer.insertSublayer(background, atIndex: 0)

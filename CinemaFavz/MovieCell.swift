@@ -7,13 +7,14 @@
 //
 
 import UIKit
-// configure all this stuff later! its for the tableview in the main view controller
+
 class MovieCell: UITableViewCell {
 
     @IBOutlet weak var movieTitle : UILabel!
     @IBOutlet weak var moviePoster: UIImageView!
     @IBOutlet weak var movieDesc: UILabel!
     @IBOutlet weak var movieURL: UILabel!
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

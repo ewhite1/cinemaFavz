@@ -17,9 +17,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         
         //graident background stuff
-        let background = CAGradientLayer().turquoiseColor()
-        background.frame = self.view.bounds
-        self.view.layer.insertSublayer(background, atIndex: 0)
+     //   let background = CAGradientLayer().turquoiseColor()
+       // background.frame = self.view.bounds
+        // self.view.layer.insertSublayer(background, atIndex: 0)
         //tableview stuff
         tableView.delegate = self
         tableView.dataSource = self
@@ -43,6 +43,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
+        if let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell") as? MovieCell {
+            let movie = movies[indexPath.row]
+            cell.configureCell(movie)
+            return cell
+        } else {
+            return MovieCell()
+        }
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

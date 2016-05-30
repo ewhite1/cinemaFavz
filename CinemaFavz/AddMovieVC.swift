@@ -26,13 +26,20 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         imagePicker.delegate = self
         
     }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        
+        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        moviePoster.image = image
+    }
+
+    
     @IBAction func addPoster(sender: AnyObject) {
         // Presents the image picker, to add a image object to the database
         presentViewController(imagePicker, animated: true, completion: nil)
     }
 
    
-    @IBAction func addMovie(sender: AnyObject) {
+    @IBAction func addMovie(sender: AnyObject!) {
         
         // Add stuff to the database, when pressed and dissmiss the view controller
         

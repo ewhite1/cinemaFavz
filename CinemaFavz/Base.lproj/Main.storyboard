@@ -84,7 +84,9 @@
                                             <outlet property="moviePoster" destination="iPU-9B-E29" id="S7t-Tm-1UB"/>
                                             <outlet property="movieTitle" destination="ZXF-Nd-Q9c" id="QWE-9F-N3L"/>
                                             <outlet property="movieURL" destination="PlF-nQ-C3s" id="Fat-FE-bDE"/>
-                                            <segue destination="hxN-Rj-E3O" kind="showDetail" id="YZ3-xw-Dnv"/>
+                                            <segue destination="hxN-Rj-E3O" kind="popoverPresentation" popoverAnchorView="WBa-qv-DNk" id="Kk7-eu-a9b">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -234,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b14-32-KIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1885" y="429"/>
+            <point key="canvasLocation" x="1871" y="429"/>
         </scene>
         <!--New Movie-->
         <scene sceneID="L7N-5p-jiB">

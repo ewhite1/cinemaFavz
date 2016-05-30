@@ -92,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				2B0CE8B11CB513A00091EFB5 /* Main.storyboard */,
-				2BEDBED51CFC0037003561A6 /* MovieVC.swift */,
 				2B0CE8C71CBB94940091EFB5 /* CAGradientLayer+Convience.swift */,
 				2B0CE8B91CB513A00091EFB5 /* LaunchScreen.storyboard */,
 				2BEDBED31CFBE639003561A6 /* MovieCell.swift */,
@@ -104,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				2BEDBECB1CFB9597003561A6 /* AddMovieVC.swift */,
+				2BEDBED51CFC0037003561A6 /* MovieVC.swift */,
 				2B0CE8AF1CB513A00091EFB5 /* ViewController.swift */,
 			);
 			name = Controller;

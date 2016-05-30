@@ -59,13 +59,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return movies.count
     }
     // create the segue to show the movie cell. This is crap currently!
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+   /* override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == /* ???? */,
         let destination = segue.destinationViewController as? MovieVC, movieIndex = tableView.indexPathForSelectedRow?.row {
             destination.movieTitle = movies[movieIndex]
         }
-        
-    }
+ 
+    } */
 }
 
 

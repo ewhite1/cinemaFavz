@@ -63,10 +63,6 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
                 try context.save()
             } catch {
                 print("Error saving movie!")
-                let alert = UIAlertController(title: "Oh No!", message: "Could not Save movie! Please try again.", preferredStyle: .Alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
-                self.presentViewController(alert, animated: true, completion: nil)
-            
         }
         
         self.navigationController?.popViewControllerAnimated(true)

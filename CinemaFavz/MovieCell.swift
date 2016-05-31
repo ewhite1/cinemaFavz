@@ -19,7 +19,7 @@ class MovieCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func configureCell(movie: Movie) {
+     func configureCell(movie: Movie) {
         movieTitle.text = movie.title
         moviePoster.image = movie.getMovieImg()
         movieDesc.text = movie.movieDesc

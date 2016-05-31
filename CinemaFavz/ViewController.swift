@@ -12,6 +12,7 @@ import CoreData
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     var movies = [Movie]()
+    // var fetchedResultsController: NSFetchedResultsController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell") as? MovieCell {
             let movie = movies[indexPath.row]
             cell.configureCell(movie)
+            
             return cell
         } else {
             return MovieCell()
@@ -60,12 +62,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     // create the segue to show the movie cell. This is crap currently!
    /* override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == /* ???? */,
-        let destination = segue.destinationViewController as? MovieVC, movieIndex = tableView.indexPathForSelectedRow?.row {
-            destination.movieTitle = movies[movieIndex]
-        }
+        if segue.identifier == "MovieVC" {
+        if let selectedCell = sender as? MovieCell {
+            let indexPath = tableView.indexPathForCell(selectedCell)!
+            let selectedMovie = objectAtIndexPath(indexPath) as! Movie
+     }
+     
+     }
+
  
-    } */
+    }
+ */
 }
 
 

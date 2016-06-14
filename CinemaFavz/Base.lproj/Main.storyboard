@@ -23,11 +23,11 @@
                                 <rect key="frame" x="20" y="72" width="560" height="520"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="WBa-qv-DNk" customClass="MovieCell" customModule="CinemaFavz" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="110" id="WBa-qv-DNk" customClass="MovieCell" customModule="CinemaFavz" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="560" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WBa-qv-DNk" id="c3o-OR-JvJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="109"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="109.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Hero Six" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXF-Nd-Q9c">
@@ -84,12 +84,13 @@
                                             <outlet property="moviePoster" destination="iPU-9B-E29" id="S7t-Tm-1UB"/>
                                             <outlet property="movieTitle" destination="ZXF-Nd-Q9c" id="QWE-9F-N3L"/>
                                             <outlet property="movieURL" destination="PlF-nQ-C3s" id="Fat-FE-bDE"/>
-                                            <segue destination="hxN-Rj-E3O" kind="popoverPresentation" popoverAnchorView="WBa-qv-DNk" id="Kk7-eu-a9b">
-                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                            </segue>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="iq9-LG-aaa"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Kxc-eO-BEh"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

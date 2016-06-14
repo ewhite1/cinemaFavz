@@ -19,6 +19,8 @@ class MovieCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    // reconfigure this! This is what causing the problem. The data is sent as optional(?), and its not being
+    // Shown because the data cannot be accessed this way.
      func configureCell(movie: Movie) {
         movieTitle.text = movie.title
         moviePoster.image = movie.getMovieImg()

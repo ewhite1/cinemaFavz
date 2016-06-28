@@ -43,7 +43,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-
+        
         if let cell = tableView.dequeueReusableCellWithIdentifier("addedMovies") as? MovieCell {
             let movie = movies[indexPath.row]
             cell.configureCell(movie)
@@ -52,6 +52,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         } else {
             return MovieCell()
         }
+        //create a passing data performseguewithidentifer("yourname for segue", sender: self)
+        // or something like that to go to movieVC
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -60,19 +62,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
-    // create the segue to show the movie cell. This is crap currently!
-   /* override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "MovieVC" {
-        if let selectedCell = sender as? MovieCell {
-            let indexPath = tableView.indexPathForCell(selectedCell)!
-            let selectedMovie = objectAtIndexPath(indexPath) as! Movie
-     }
-     
-     }
+    // create the segue to show the movie cell.
+   
+    
 
- 
-    }
- */
-        }
-
-
+}

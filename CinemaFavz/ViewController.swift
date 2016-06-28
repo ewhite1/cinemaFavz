@@ -43,8 +43,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        if let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell") as? MovieCell {
+
+        if let cell = tableView.dequeueReusableCellWithIdentifier("addedMovies") as? MovieCell {
             let movie = movies[indexPath.row]
             cell.configureCell(movie)
             
@@ -73,6 +73,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
  
     }
  */
-}
+        }
 
 
